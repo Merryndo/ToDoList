@@ -1,0 +1,169 @@
+Estilo general
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Fondo moderno con colores oscuros */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #141e30, #243b55);
+    background-size: cover;
+    color: #f0f0f0;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Contenedor flotante con un toque más moderno */
+.container {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    z-index: 2;
+    backdrop-filter: blur(8px);
+}
+
+/* Título moderno */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #f3e7e7;
+    letter-spacing: 1.5px;
+    text-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Entrada de texto */
+#taskInput {
+    width: calc(100% - 2rem); /* Ajustar el ancho */
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+#taskInput:focus {
+    background-color: rgba(255, 255, 255, 0.253);
+}
+
+/* Botón atractivo, moderno y vibrante */
+#addTaskButton {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    background: linear-gradient(135deg, #ff6f61, #ff4757);
+    color: rgb(241, 229, 229);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+#addTaskButton:hover {
+    background: linear-gradient(135deg, #ff4757, #ff6f61);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
+/* Lista de tareas */
+#taskList {
+    list-style: none;
+    margin-top: 1.5rem;
+    padding: 0;
+}
+
+#taskList li {
+    padding: 0.75rem;
+    margin-bottom: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #161414;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    position: relative;
+}
+
+/* Estilo para los botones en la lista de tareas */
+#taskList li button {
+    font-size: 0.9rem;
+    border-radius: 8px;
+    padding: 0.5rem 0.75rem;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-left: 5px; /* Espacio entre botones */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+
+.edit-btn {
+    background: #4caf50;
+    color: white;
+}
+
+.edit-btn:hover {
+    background: #45a049;
+    transform: scale(1.05);
+}
+
+.save-btn {
+    background: #2196f3;
+    color: white;
+}
+
+.save-btn:hover {
+    background: #1976d2;
+    transform: scale(1.05);
+}
+
+.delete-btn {
+    background: none;
+    color: #e84545;
+    font-size: 1.2rem;
+}
+
+.delete-btn:hover {
+    color: #ff4d4d;
+}
+
+/* Estilo para el texto tachado */
+.task-text.completed {
+    text-decoration: line-through;
+    color: #999;
+}
+/* Estilo para el input de edición */
+.edit-input {
+    width: calc(100% - 2.5rem); /* Ajustar el ancho para que encaje bien con los botones */
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Borde sutil */
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo translúcido similar al del input principal */
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para darle un aspecto elevado */
+    margin-right: 0.5rem; /* Espacio para el botón de guardar */
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.edit-input:focus {
+    border-color: #ff4757; /* Color de borde al enfocar, coincide con el botón de añadir tarea */
+    background-color: rgba(255, 255, 255, 0.3);
+}
+ 
